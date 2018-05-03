@@ -46,6 +46,12 @@ h2{
   grid-template-areas:
   "left right";
 }
+.right p{
+  line-height: 1.5;
+}
+.left p{
+  line-height:1.5;
+}
 .section .p1{
   padding-top: 2.5vh;
 }
@@ -53,22 +59,22 @@ h2{
   padding-top: 2.5vh;
 }
 .section .p3{
-  padding-top: 3vh;
+  padding-top: 4.5vh;
 }
 .section .p4{
-  padding-top: 3vh;
-}
-.section .lower {
   padding-top: 3.5vh;
 }
+.section .lower {
+  padding-top: 4vh;
+}
 .section .more-lower{
-  padding-top: 4.6vh;
+  padding-top: 6.6vh;
 }
 .section .to-low{
-  padding-top: 5.2vh;
+  padding-top: 6.5vh;
 }
 .section .l2-low{
-  padding-top: 2.6vh;
+  padding-top: 3.5vh;
 }
 footer{
   height: 0.5vh;
