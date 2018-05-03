@@ -1,0 +1,84 @@
+body{
+  background-color: black;
+}
+h2{
+  border-bottom:  solid 0.25vh red;
+}
+.page{
+  color:white;
+  padding-top: 6vh;
+  /* padding-left: 2vw; */
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page a{
+  text-decoration: none;
+  color: white;
+}
+.page a:hover{
+  color: black;
+}
+.page ul{
+  list-style: none;
+  margin-left: -2vw;
+}
+.page li{
+  display: inline;
+  margin-right: 2vw;
+  font-size: 150%;
+}
+.infophoto{
+  padding-top: 1vw;
+  padding-left: 2vw;
+  background-color: #800000;
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "infos photo";
+}
+.section{
+  padding-left: 2vw;
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "left right";
+}
+.section .lower {
+  padding-top: 3.5vh;
+}
+.section .more-lower{
+  padding-top: 4.6vh;
+}
+.section .to-low{
+  padding-top: 5.2vh;
+}
+.section .l2-low{
+  padding-top: 2.6vh;
+}
+footer{
+  height: 0.5vh;
+  background-color: #800000;
+}
+@media screen and (max-width: 500px) {
+  .photo{
+    display: none;}
+  .page{
+    width: 100%;
+  }
+  .page ul{
+    margin-left:-10vw;
+  }
+  .page li{
+    margin-right: 5vw;
+  }
+  .page a{
+    text-decoration: none;
+    color: white;
+  }
+  .page a:hover{
+    color: black;
+  }
+}
