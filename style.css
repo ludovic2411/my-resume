@@ -46,6 +46,18 @@ h2{
   grid-template-areas:
   "left right";
 }
+.section .p1{
+  padding-top: 2.5vh;
+}
+.section .p2{
+  padding-top: 2.5vh;
+}
+.section .p3{
+  padding-top: 3vh;
+}
+.section .p4{
+  padding-top: 3vh;
+}
 .section .lower {
   padding-top: 3.5vh;
 }
