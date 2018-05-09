@@ -3,11 +3,31 @@ body{
 }
 h2{
   border-bottom:  solid 0.25vh red;
+  animation-name:left-text;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+}
+
+@keyframes left-text {
+  0%{padding-left: 500vh;}
+  100%{padding-left: 0vh;}
+}
+
+@keyframes right-text{
+  0%{padding-right: 500vh;}
+  100%{padding-right: 0vh;}
+}
+
+@keyframes opacity {
+  0%{opacity:0;}
+  50%{opacity:0.5;}
+  100%{opacity:1;}
 }
 .page{
   color:white;
   padding-top: 6vh;
-  /* padding-left: 2vw; */
+  background-color: black;
   width: 60%;
   margin-left: auto;
   margin-right: auto;
@@ -29,6 +49,10 @@ h2{
   font-size: 150%;
 }
 .infophoto{
+  animation-name:opacity;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
   padding-top: 1vw;
   padding-left: 2vw;
   background-color: #800000;
@@ -46,14 +70,26 @@ h2{
   grid-template-areas:
   "left right";
 }
+.right{
+  animation-name:right-text;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+}
 .right p{
   line-height: 1.5;
+}
+.left{
+  animation-name:left-text;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
 }
 .left p{
   line-height:1.5;
 }
 .section .p1{
-  padding-top: 2.5vh;
+  padding-top: 3.5vh;
 }
 .section .p2{
   padding-top: 2.5vh;
@@ -64,8 +100,14 @@ h2{
 .section .p4{
   padding-top: 3.5vh;
 }
-.section .lower {
+.section .xx-lower{
   padding-top: 4vh;
+}
+.section .x-lower{
+  padding-top:6.5vh;
+}
+.section .lower {
+  padding-top: 7vh;
 }
 .section .more-lower{
   padding-top: 6.6vh;
@@ -80,7 +122,12 @@ footer{
   height: 0.5vh;
   background-color: #800000;
 }
+
+
 @media screen and (max-width: 500px) {
+  .infos{
+    width: 100%;
+  }
   .photo{
     display: none;}
   .page{
@@ -98,5 +145,41 @@ footer{
   }
   .page a:hover{
     color: black;
+  }
+  .section .p1{
+    padding-top: 22vh;
+  }
+  .section .p2{
+    padding-top: 16vh;
+  }
+  .section .p3{
+    padding-top: 13vh;
+  }
+  .section .p4{
+    padding-top: 13vh;
+  }
+  .section .xx-lower {
+    margin-top: 10.2vh;
+  }
+  .section .x-lower{
+    padding-top: 33vh;
+  }
+  .section .lower{
+    padding-top: 25vh;
+  }
+  .section .dutch{
+    padding-top:4.3vh;
+  }
+  .section .italian{
+    padding-top: 4.7vh;
+  }
+  .section .coding{
+    padding-top:4vh;
+  }
+  .section .to-low{
+    padding-top: 16.8vh;
+  }
+  .section .l2-low{
+    padding-top: 12.8vh;
   }
 }
